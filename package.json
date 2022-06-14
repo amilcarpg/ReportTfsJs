@@ -1,0 +1,29 @@
+{
+  "name": "apg.tfsreport",
+  "version": "1.0.0",
+  "description": "report en js usando apis de tfs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --config webpack.config.js",
+    "dev": "webpack --config webpack.config.dev.js",
+    "build:watch": "webpack --watch --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amilcarpg/ReportTfsJs.git"
+  },
+  "keywords": [
+    "tfs",
+    "js"
+  ],
+  "author": "apg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amilcarpg/ReportTfsJs/issues"
+  },
+  "homepage": "https://github.com/amilcarpg/ReportTfsJs#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
