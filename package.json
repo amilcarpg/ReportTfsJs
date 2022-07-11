@@ -4,15 +4,17 @@
   "description": "report en js usando apis de tfs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production --config webpack.config.js",
-    "dev": "webpack --config webpack.config.dev.js",
-    "build:watch": "webpack --watch --config webpack.config.js"
+    "tarea1": "node src/index.js",
+    "async": "node src/async/challenge.js",
+    "dev": "webpack --config webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amilcarpg/ReportTfsJs.git"
   },
+  "browser":{
+    "child_process": true
+    } , 
   "keywords": [
     "tfs",
     "js"
@@ -24,6 +26,25 @@
   },
   "homepage": "https://github.com/amilcarpg/ReportTfsJs#readme",
   "dependencies": {
+    "xhr2": "^0.2.1",
     "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "@babel/core": "^7.13.1",
+    "@babel/plugin-transform-runtime": "^7.13.7",
+    "@babel/preset-env": "^7.13.5",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.1.0",
+    "css-minimizer-webpack-plugin": "^1.2.0",
+    "dotenv-webpack": "^6.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.2.0",
+    "mini-css-extract-plugin": "^1.3.9",
+    "stylus-loader": "^5.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "url-loader": "^4.1.1"
   }
 }
